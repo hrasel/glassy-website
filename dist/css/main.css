@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+p {
+  font-size: 0.7rem;
+  color: #94A9BC;
+}
+
+h2 {
+  font-size: 0.9rem;
+  color: #616161;
+}
+
+h3 {
+  color: #6E8691;
+  font-size: 0.8rem;
+}
+
+main {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left bottom, right top, from(#65dfc9), to(#6cdbeb));
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+}
+
+main .glass {
+  height: 80vh;
+  width: 60%;
+  background: white;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+}
+
+main .glass .dashboard {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-radius: 2rem;
+}
+
+main .glass .dashboard .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .glass .dashboard .user .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left bottom, right top, from(#65dfc9), to(#6cdbeb));
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  margin-bottom: 0.4rem;
+}
+
+main .glass .dashboard .user .avatar img {
+  width: 60px;
+}
+
+main .glass .dashboard .links .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0rem;
+  padding: 0.5rem 3rem;
+}
+
+main .glass .dashboard .links .link img {
+  width: 20px;
+  height: 20px;
+}
+
+main .glass .dashboard .links .link h2 {
+  padding-left: 1.3rem;
+}
+
+main .glass .dashboard .pro {
+  background: -webkit-gradient(linear, left bottom, right top, from(#65dfc9), to(#6cdbeb));
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  width: 80%;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .glass .dashboard .pro h2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 0.8rem;
+  line-height: 20px;
+  color: white;
+}
+
+main .glass .dashboard .pro img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 60px;
+}
+
+main .glass .content {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3rem;
+}
+
+main .glass .content header h1 {
+  color: #5C84A3;
+  margin-bottom: 0.5rem;
+}
+
+main .glass .content header input[type=text] {
+  border: none;
+  width: 50%;
+  height: 20px;
+  border-radius: 1rem;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+}
+
+main .glass .content .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FAFDFF;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+main .glass .content .card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 1rem;
+}
+
+main .glass .content .card .card-info {
+  margin: 0 2rem;
+}
+
+main .glass .content .card .card-info h2 {
+  margin-bottom: 0.5rem;
+}
+
+main .glass .content .card .card-info p {
+  margin-bottom: 0.4rem;
+}
+
+main .glass .content .card .card-info .progress-bar {
+  width: 100%;
+  height: 15px;
+  background: #eee;
+  border-radius: 1rem;
+}
+
+main .glass .content .card .card-info .progress-bar-value {
+  width: 60%;
+  height: 100%;
+  border-radius: 1rem 0 0 1rem;
+  background: #74E9D7;
+}
+
+main .glass .content .card .percentage {
+  color: #74E9D7;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+main .circle1 {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.1)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+  top: 5%;
+  right: 15%;
+}
+
+main .circle2 {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.1)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+  bottom: 5%;
+  left: 10%;
+}
+/*# sourceMappingURL=main.css.map */

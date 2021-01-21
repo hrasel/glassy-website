@@ -1,0 +1,197 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@mixin circle {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.1)
+    );
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+p{
+  font-size: 0.7rem;
+  color: #94A9BC;
+}
+h2{
+  font-size: 0.9rem;
+  color: #616161;
+}
+h3{
+  color: #6E8691;
+  font-size: 0.8rem;
+}
+main{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+
+  .glass{
+    height: 80vh;
+    width: 60%;
+    background: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+      );
+    backdrop-filter: blur(2rem);
+    border-radius: 2rem;
+    display: flex;
+    z-index: 2;
+
+    .dashboard{
+      flex: 1;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-evenly;
+      align-items: center;
+      background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+      );
+      border-radius: 2rem;
+      .user{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        .avatar{
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+          margin-bottom: 0.4rem;
+
+          img{
+            width: 60px;
+          }
+        }
+      }
+      .links{
+        .link{
+          display: flex;
+          align-items: center;
+          margin: 1rem 0rem;
+          padding: 0.5rem 3rem;
+          img{
+            width: 20px;
+            height: 20px;
+          }
+          h2{
+            padding-left: 1.3rem;
+          }
+        }
+      }
+      .pro{
+        background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+        width: 80%;
+        padding: 0 1rem;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+
+        h2{
+          flex: 1;
+          font-size: 0.8rem;
+          line-height: 20px;
+          color: white;
+        }
+        img{
+          flex: 1;
+          width: 60px;
+        }
+      }
+    }
+    .content{
+      flex: 2;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      margin: 3rem;
+
+      header{
+        
+        h1{
+          color: #5C84A3;
+          margin-bottom: 0.5rem;
+        }
+        input[type=text]{
+          border: none;
+          width: 50%;
+          height: 20px;
+          border-radius: 1rem;
+          background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3)
+            );
+        }
+      }
+      .card{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #FAFDFF;
+        border-radius: 0.6rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+
+        img{
+          width: 60px;
+          height: 60px;
+          border-radius: 1rem;
+        }
+        .card-info{
+          margin: 0 2rem;
+          h2{
+            margin-bottom: 0.5rem;
+          }
+          p{
+            margin-bottom: 0.4rem;
+          }
+          .progress-bar{
+            width: 100%;
+            height: 15px;
+            background: #eee;
+            border-radius: 1rem;
+
+            &-value{
+              width: 60%;
+              height: 100%;
+              border-radius: 1rem 0 0 1rem;
+              background: #74E9D7;
+            }
+          }
+        }
+        .percentage{
+          color: #74E9D7;
+          align-self: flex-start;
+
+        }
+      }
+    }
+  }
+  
+  .circle1{
+    @include circle;
+    top: 5%;
+    right: 15%;
+  }
+  .circle2{
+    @include circle;
+    bottom: 5%;
+    left: 10%;
+  }
+}
